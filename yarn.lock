@@ -1150,7 +1150,7 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.8", "@babel/runtime@^7.16.3", "@babel/runtime@^7.17.8", "@babel/runtime@^7.18.3", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.0", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.8", "@babel/runtime@^7.16.3", "@babel/runtime@^7.17.2", "@babel/runtime@^7.17.8", "@babel/runtime@^7.18.3", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.0", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
   integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
@@ -3350,7 +3350,7 @@
   resolved "https://registry.yarnpkg.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.2.207.tgz#36ffb9bc08b1a27415009f601fb22f13ffd076d8"
   integrity sha512-clRP+rfNcGrgu2AXb/H02iKm2tTNHPd5cgqTP2bFe9PalKh2mBFR52+g44b3ca7vwdwIYie39ZoIu7jNkKEVMA==
 
-"@swc/core@^1.2.173":
+"@swc/core@^1.2.152", "@swc/core@^1.2.173":
   version "1.2.207"
   resolved "https://registry.yarnpkg.com/@swc/core/-/core-1.2.207.tgz#cbe5f6c971ba17df83ab4934d46a1e53580634a7"
   integrity sha512-4LgdAwZv+dLQsIBaWpK4eEOpeeJlcuOM6LRkUXJLZ0CUIkZHm2zQ4N6jksm/YJYgF++mYwjM6JWwCvLpW3ZTuA==
@@ -14086,6 +14086,16 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.2.tgz#01ad8802ca5b445b9c316b55e72645c13a3cd7e3"
   integrity sha512-CMtO2Uneg3SAz/d6fZ/6qbqqQHi2ynq6/KzMD/26gTkiEShCcpqFfTHgOxsE0egAq6SX3FmN4CeSqn8BzXQkJg==
 
+storybook-addon-swc@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/storybook-addon-swc/-/storybook-addon-swc-1.1.7.tgz#5cc82b299377d9cab1d6b7ccb8c8d19b51fd8715"
+  integrity sha512-nfls79zOhwM6Jbs9jm4DeFhpOOG/fHd7okh6cgVM9javaS2kP2SH/Ze3zRs2PpzvyQxXkzXrHQlbyQYWkMYD4g==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@swc/core" "^1.2.152"
+    deepmerge "^4.2.2"
+    swc-loader "^0.1.15"
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"
@@ -14428,6 +14438,11 @@ swc-loader@0.1.15:
   integrity sha512-cn1WPIeQJvXM4bbo3OwdEIapsQ4uUGOfyFj0h2+2+brT0k76DCGnZXDE2KmcqTd2JSQ+b61z2NPMib7eEwMYYw==
   dependencies:
     loader-utils "^2.0.0"
+
+swc-loader@^0.1.15:
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/swc-loader/-/swc-loader-0.1.16.tgz#4c718d698e518f3e6ceb9f7872c1855cdb187066"
+  integrity sha512-NKIm8aJjK/z/yfzk+v7YGwJMjBKaLaUs9ZKI2zoaIGKAjtkwjO92ZLI0fiTZuwzRqVLQl/29fBdSgFCBzquR0w==
 
 symbol-tree@^3.2.4:
   version "3.2.4"
