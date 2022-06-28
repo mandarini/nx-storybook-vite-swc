@@ -61,6 +61,7 @@
     "nx": "14.3.6",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
+    "storybook-addon-next": "^1.6.6",
     "storybook-addon-swc": "^1.1.7",
     "swc-loader": "0.1.15",
     "ts-jest": "27.1.4",
