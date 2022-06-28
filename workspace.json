@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "nextapp": "apps/nextapp",
+    "nextapp-e2e": "apps/nextapp-e2e"
+  }
+}
