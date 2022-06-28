@@ -3,6 +3,13 @@
   "version": 2,
   "projects": {
     "nextapp": "apps/nextapp",
-    "nextapp-e2e": "apps/nextapp-e2e"
+    "nextapp-e2e": "apps/nextapp-e2e",
+    "nextlib": "libs/nextlib",
+    "reactapp-one": "apps/reactapp-one",
+    "reactapp-one-e2e": "apps/reactapp-one-e2e",
+    "reactapp-two": "apps/reactapp-two",
+    "reactapp-two-e2e": "apps/reactapp-two-e2e",
+    "reactlib": "libs/reactlib",
+    "reactlib-one": "libs/reactlib-one"
   }
 }

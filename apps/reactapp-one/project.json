@@ -1,0 +1,83 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/reactapp-one/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "swc",
+        "outputPath": "dist/apps/reactapp-one",
+        "index": "apps/reactapp-one/src/index.html",
+        "baseHref": "/",
+        "main": "apps/reactapp-one/src/main.tsx",
+        "polyfills": "apps/reactapp-one/src/polyfills.ts",
+        "tsConfig": "apps/reactapp-one/tsconfig.app.json",
+        "assets": [
+          "apps/reactapp-one/src/favicon.ico",
+          "apps/reactapp-one/src/assets"
+        ],
+        "styles": ["apps/reactapp-one/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/reactapp-one/src/environments/environment.ts",
+              "with": "apps/reactapp-one/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "reactapp-one:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "reactapp-one:build:development"
+        },
+        "production": {
+          "buildTarget": "reactapp-one:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/reactapp-one/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/reactapp-one"],
+      "options": {
+        "jestConfig": "apps/reactapp-one/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
